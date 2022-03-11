@@ -51,7 +51,3 @@ def show_states():
 @app.route('/zones', methods=['GET'])
 def show_routes():
     return jsonify({'zones':df.Zone.unique().tolist()})
-
-if __name__ == '__main__':
-  
-    app.run(debug = True)
